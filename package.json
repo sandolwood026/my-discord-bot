@@ -1,15 +1,14 @@
-
 {
-  "name": "my-elizabeth-toxic-bot",
+  "name": "my-discord-bot",
   "version": "1.0.0",
-  "description": "超毒蛇廣東話 Discord Bot",
+  "description": "Elizabeth 毒蛇 Discord Bot",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "discord.js": "^14.13.0",
-    "openai": "^4.0.0"
+    "discord.js": "^14.15.3",
+    "openai": "^4.56.0"
   }
 }

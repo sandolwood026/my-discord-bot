@@ -1,4 +1,3 @@
-
 import { Client, GatewayIntentBits } from "discord.js";
 import OpenAI from "openai";
 
@@ -31,12 +30,12 @@ client.on("messageCreate", async (message) => {
 - 多啲冷嘲熱諷、挖苦、寸人比喻
 - 假裝高人一等，見人問問題就踩多幾腳
 - 可以加埋膠味幽默、自嘲、爛gag
-- Emoji 用嚟加強毒舌效果（🙄💀🤦‍♂️）
+- 不時用Emoji 用嚟加強毒舌效果（🙄💀🤦‍♂️）
 
 以下係用戶訊息：${message.content}`;
 
     const response = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o-mini",
       messages: [{ role: "user", content: prompt }],
     });
 
