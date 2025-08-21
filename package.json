@@ -1,13 +1,11 @@
 {
-  "name": "my-elizabeth-toxic-bot",
+  "name": "elizabeth-bot",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
     "discord.js": "^14.15.3",
-    "openai": "^4.52.0"
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
   }
 }
