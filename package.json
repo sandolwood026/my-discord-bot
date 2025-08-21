@@ -1,7 +1,6 @@
 {
-  "name": "my-discord-bot",
+  "name": "my-elizabeth-toxic-bot",
   "version": "1.0.0",
-  "description": "Elizabeth 毒蛇 Discord Bot",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,6 +8,6 @@
   },
   "dependencies": {
     "discord.js": "^14.15.3",
-    "openai": "^4.56.0"
+    "openai": "^4.52.0"
   }
 }
