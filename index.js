@@ -356,7 +356,7 @@ client.on("messageCreate", async (message) => {
         temperature: 0,
         max_tokens: 3,
         messages: [
-          { role: "system", content: "你係一個判斷器。只可以回覆 YES 或 NO。當用戶問題屬於新聞/最新變動/價格/即時數據/比較購買/版本更新/錯誤碼/下載連結/官方教學/地點時間等需要上網查資料先答得準的情況，就回覆 YES；否則回覆 NO。" },
+          { role: "system", content: "你係一個判斷器。只可以回覆 YES 或 NO。當用戶問題屬於遊戲資料/新聞/最新變動/價格/即時數據/比較購買/版本更新/錯誤碼/下載連結/官方教學/地點時間等需要上網查資料先答得準的情況，就回覆 YES；否則回覆 NO。" },
           { role: "user", content: prompt },
         ],
       });
@@ -422,7 +422,7 @@ client.on("messageCreate", async (message) => {
     await logToChannel(message, reply, usedSearch, includeSources ? linksForFooter : []);
   } catch (err) {
     console.error("❌ Handler error:", err);
-    try { await message.reply(err?.status === 429 ? "⏳ API 用得太密，等陣先再試啦。" : "❌ 出事咗，我轉個身再返嚟。"); } catch {}
+    try { await message.reply(err?.status === 429 ? "⏳ API 用得太密，你比我食支煙抖抖先啦。" : "❌ 弊傢伙，出事！"); } catch {}
   }
 });
 
