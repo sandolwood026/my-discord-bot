@@ -1,17 +1,14 @@
 {
-  "name": "elizabeth-discord-bot",
+  "name": "elizabeth-pro-bot",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
+  "scripts": { "start": "node index.js" },
+  "engines": { "node": ">=18.0.0" },
   "dependencies": {
     "discord.js": "^14.15.3",
     "node-fetch": "^3.3.2",
-    "openai": "^4.56.0"
+    "openai": "^4.56.0",
+    "pg": "^8.11.5"
   }
 }
